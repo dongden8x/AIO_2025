@@ -3,4 +3,4 @@ openpyxl
 pandas 
 streamlit 
 matplotlib 
-PIL 
+Pillow 
