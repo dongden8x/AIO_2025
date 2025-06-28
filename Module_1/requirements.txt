@@ -1,0 +1,6 @@
+openpyxl
+io
+pandas 
+streamlit 
+matplotlib.pyplot 
+PIL 
