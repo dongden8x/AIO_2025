@@ -23,7 +23,7 @@ def login():
             st.warning("Vui lòng nhập tên người dùng")
     
 def factorial_calculator():
-    st.write(f"Xin chào, {st.session_state.username}")
+    st.write(f"Xin chào, {st.session_state.user_name}")
     if st.button("Đang xuất"):
         st.session_state.logged_in = False
         st.session_state.user_name = ""
@@ -40,7 +40,7 @@ def main():
         st.session_state.logged_in = False
     
     if "username" not in st.session_state:
-        st.session_state.username = ""
+        st.session_state.user_name = ""
 
     if st.session_state.logged_in:
         factorial_calculator()
