@@ -2,5 +2,5 @@ openpyxl
  
 pandas 
 streamlit 
-matplotlib.pyplot 
+matplotlib 
 PIL 
