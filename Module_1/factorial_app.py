@@ -24,6 +24,10 @@ def login():
     
 def factorial_calculator():
     st.write(f"Xin chào, {st.session_state.username}")
+    if st.button("Đang xuất"):
+        st.session_state.logged_in = False
+        st.session_state.user_name = ""
+        st.rerun()
     number = st.number_input("Nhập vào một số:", min_value = 0, max_value=900)
     if st.button("Tính giai thừa"): 
         result = fact(number)
