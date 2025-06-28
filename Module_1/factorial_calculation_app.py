@@ -5,6 +5,7 @@ import os
 def load_users():
     """Đọc danh sách user từ file user.txt"""
     try:
+        file_path = os.path.join(os.path.dirname(__file__), "user.txt")
         if os.path.exists("user.txt"):
             with open("user.txt", "r", encoding="utf-8") as f:
                 users = [line.strip() for line in f.readlines() if line.strip()]
